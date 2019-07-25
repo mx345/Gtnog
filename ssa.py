@@ -24,11 +24,11 @@ while True:
 		time_difference=end_time-start_time
 		print("恭喜你猜对了!(次数:"+str(cnt)+",耗时:"+str(int(time_difference))+"秒)")
 		if 1<=cnt<=5:
-			if time_difference <=3 :
+			if 1<=time_difference <=3 :
 				print("你很棒!")
 			elif 4<=time_difference<=8:
 				print("你还行!") 
-			elif time_difference>=9:
+			elif 8<=time_difference<=9:
 				print("继续努力吧")
 		elif 6<=cnt<=10:
 			if 10<= time_difference<=15:
