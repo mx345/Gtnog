@@ -23,17 +23,17 @@ while True:
 		end_time = time.time()
 		time_difference=end_time-start_time
 		print("恭喜你猜对了!(次数:"+str(cnt)+",耗时:"+str(int(time_difference))+"秒)")
-		if 1<=cnt<=5:
-			if 1<=time_difference <=3 :
+		if 1<=time_difference<=20:
+			if 1<=cnt <=3 :
 				print("你很棒!")
-			elif 4<=time_difference<=8:
+			elif 4<=cnt<=8:
 				print("你还行!") 
-			elif 8<=time_difference<=9:
+			elif 8<=cnt<=15:
 				print("继续努力吧")
-		elif 6<=cnt<=10:
-			if 10<= time_difference<=15:
+		elif 20<=time_difference<=100:
+			if 1<=cnt<=20:
 				print("要加油啊")
-			if time_difference>16:
+			elif cnt>20:
 				print("你运气很差") 
 		break  # 结束当前循环结构，执行循环的后续语句
 		# continue  # 结束本轮循环，继续执行下一轮循环
